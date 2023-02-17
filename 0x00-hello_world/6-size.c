@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint,h>
 /**
  * main - the output is the sizes of all of the data types
  *
