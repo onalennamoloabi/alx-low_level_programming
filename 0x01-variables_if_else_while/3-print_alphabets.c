@@ -10,8 +10,7 @@
 int main(void)
 
 {
-	char alpha_lower;
-	char alpha_upper;
+	char alpha_lower, alpha_upper
 
 	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++)
 	{
@@ -29,5 +28,6 @@ int main(void)
 			}
 		}
 	putchar('\n');
+
 		return (0);
 }
