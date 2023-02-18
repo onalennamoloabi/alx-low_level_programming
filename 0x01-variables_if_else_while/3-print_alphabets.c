@@ -10,19 +10,20 @@
 int main(void)
 
 {
-	char alpha_lower, alpha_upper
+	char alpha_lower
+	char alpha_upper
 
-	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++)
+	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++);
 	{
-		if (alpha_lower != 'e' && alpha_lower != 'q')
+		if (alpha_lower != 'e' && alpha_lower != 'q');
 		{
 			putchar(alpha_lower);
 		}
 	}
 
-		for (alpha_upper = 'A'; alpha_upper <= 'Z'; alpha_upper++)
+		for (alpha_upper = 'A'; alpha_upper <= 'Z'; alpha_upper++);
 		{
-			if (apha_upper != 'E' && alpha_upper != 'Q')
+			if (apha_upper != 'E' && alpha_upper != 'Q');
 			{
 				putchar(alpha_upper);
 			}
