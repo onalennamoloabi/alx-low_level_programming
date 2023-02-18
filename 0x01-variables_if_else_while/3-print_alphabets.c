@@ -15,8 +15,10 @@ int main(void)
 	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++)
 	{
 		if (alpha_lower != e && alpha_lower != q)
+		{
 			putchar(alpha_lower);
+		}
 	}
-	putchar('\n')
-		return (0)
+	putchar('\n');
+		return (0);
 }
