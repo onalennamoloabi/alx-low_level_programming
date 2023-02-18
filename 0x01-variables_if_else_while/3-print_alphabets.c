@@ -10,22 +10,23 @@
 int main(void)
 
 {
-	char alpha_lower
-	char alpha_upper
+	char alpha;
 
-	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++);
+	for (alpha = 'a'; alpha <= 'z'; alpha++);
 	{
-		if (alpha_lower != 'e' && alpha_lower != 'q');
+		if (alpha != 'e' && alpha != 'q');
+
 		{
-			putchar(alpha_lower);
+			putchar(alpha);
 		}
 	}
 
-		for (alpha_upper = 'A'; alpha_upper <= 'Z'; alpha_upper++);
+		for (alpha = 'A'; alpha <= 'Z'; alpha++);
+
 		{
-			if (apha_upper != 'E' && alpha_upper != 'Q');
+			if (apha != 'E' && alpha != 'Q');
 			{
-				putchar(alpha_upper);
+				putchar(alpha);
 			}
 		}
 	putchar('\n');
