@@ -10,7 +10,7 @@
 int main(void)
 
 {
-	char alpha_lower;
+	char alpha_lower; alpha_upper
 
 	for (alpha_lower = 'a'; alpha_lower <= 'z'; alpha_lower++)
 	{
@@ -19,6 +19,14 @@ int main(void)
 			putchar(alpha_lower);
 		}
 	}
+
+		for (alpha_upper = 'A'; alpha_upper <= 'Z'; alpha_upper++)
+		{
+			if (apha_upper != 'E' && alpha_upper != 'Q')
+			{
+				putchar(alpha_upper);
+			}
+		}
 	putchar('\n');
 		return (0);
 }
