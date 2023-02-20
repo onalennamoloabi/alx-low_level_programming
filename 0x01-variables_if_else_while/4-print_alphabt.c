@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
  * main - prints alphabet but not q and e
+ *
  * Return: 0 (SUCCESS)
  */
 int main(void)
@@ -11,19 +10,19 @@ int main(void)
 
 	for (alphabt = 'a'; alphabt <= 'z'; alphabt++)
 	{
-		if (alphabt != 'e' && alphabt != 'q'; alphabt++)
+		if (alphabt != 'e' && alphabt != 'q')
 		{
 			putchar(alphabt);
 		}
 	}
-	for (alphabt = 'A'; alphabt <= 'Z')
+	for (alphabt = 'A'; alphabt <= 'Z'; alphabt++)
 	{
 		if (alphabt != 'E' && alphabt != 'Q')
 		{
 			putchar(alphabt);
 		}
-		putchar('\n')
 	}
-	return(0)
+	putchar('\n');
+	return(0);
 }
 
