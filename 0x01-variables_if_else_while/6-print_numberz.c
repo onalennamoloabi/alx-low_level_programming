@@ -1,14 +1,13 @@
-#include <stdlib.h>
 #include <stdio.h>
 /**
- * main - prints digits of base 10 from 0
+ * main - Entry point*
  * Return: 0 (SUCCESS)
  */
 int main(void)
 {
 	int digit;
 
-	for (digit = '0'; digit <= 9; digit++)
+	for (digit = '0'; digit < 10; digit++)
 	putchar(digit + '0');
 	putchar('\n');
 
