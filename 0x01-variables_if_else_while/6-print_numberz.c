@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * main - Entry point*
+ * main - prints all single digits of base 10 from 0
  * Return: 0 (SUCCESS)
  */
 int main(void)
 {
-	int i;
+	int digit;
 
-	for (i = 0; i < 10; i++)
+	for (digit = 0; digit <= 9; digit++)
 	putchar(digit + '0');
 	putchar('\n');
 
