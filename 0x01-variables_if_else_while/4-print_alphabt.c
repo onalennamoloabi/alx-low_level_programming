@@ -15,14 +15,6 @@ int main(void)
 			putchar(alphabt);
 		}
 	}
-	for (alphabt = 'A'; alphabt <= 'Z'; alphabt++)
-	{
-		if (alphabt != 'E' && alphabt != 'Q')
-		{
-			putchar(alphabt);
-		}
-	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
-
