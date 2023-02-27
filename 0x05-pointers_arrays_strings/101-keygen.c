@@ -1,41 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
-#include <ctype.h>
-#define PASSWORD_LENGTH 10
 /**
- * *generate_password - generates a valid password
- * Return: The generated password
- */
-char *generate_password()
-{
-	char *password = malloc(sizeof(char) * (PASSWORD_LENGTH + 1));
-	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	int i;
-	
-	srand(time(NULL));
-
-	while (1)
-	{
-		for (i = 0; i < PASSWORD_LENGTH; i++)
-		{
-			password[i] = charset[rand() % strlen(charset)];
-		}
-		password[PASSWORD_LENGTH] = '\0';
-		if (strcspn(password, "0123456789") != PASSWORD_LENGTH) {
-			break;
-		}
-	}
-	return (password);
-}
-
-/** 
- * main - prints the output
- * Return: 0
+ * main - Generates a random password
+ * for the program 101-crackme
+ * Return:0(SUCCESS)
  */
 int main(void)
 {
-	puts("Tada! Congrats");
+	char password[84];
+	int index = 0, sum = 0, half1, half2;
+
+	srand(time(0));
+
+	while (sum < 2772)
+	{
+		password[index] = 33 + rand() % 94;
+		sum += password[index++];
+	}
+	password[index] = '\0';
+
+	if (sum != 2772)
+	{
+		half1 = (sum - 2772) / 2;
+		half2 = (sum - 2772) / 2;
+		if ((sum - 2772) % 2 != 0)
+			half1++;
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + half1))
+			{
+				password[index] -= half1;
+				break;
+			}
+		}
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + half2))
+			{
+				password[index] -= half2;
+				break;
+			}
+		}
+	}
+	printf("%s", password);
 	return (0);
 }
