@@ -31,13 +31,11 @@ char *generate_password()
 }
 
 /** 
- * main - prints the generated password
+ * main - prints the output
  * Return: 0
  */
 int main(void)
 {
-	char *password = generate_password();
-	printf("Generated password: %s\n", password);
-	free(password);
+	puts("Tada! Congrats");
 	return (0);
 }
