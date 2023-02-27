@@ -16,7 +16,6 @@ char *generate_password()
 	
 	srand(time(NULL));
 
-// To generate a password that meets the program's requirements
 	while (1)
 	{
 		for (i = 0; i < PASSWORD_LENGTH; i++)
